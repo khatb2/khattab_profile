@@ -1,1 +1,51 @@
-node_modules
+# Dependencies
+node_modules/
+.npm
+
+# Next.js
+.next/
+out/
+
+# Development
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Production
+build
+dist
+.cache
+
+# Testing
+coverage
+
+# IDE and editor files
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs
+*.log
+
+# Temporary folders
+tmp/
+temp/
+
+# Build outputs
+*.min.js
+*.min.css
+
+# Public images (we'll handle these separately)
+public/courses/
+public/personal/
+public/project/
+public/working/
+public/cv/
