@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 7, "column": 0}, "map": {"version":3,"sources":["file:///K:/profile/src/app/loading.tsx"],"sourcesContent":["export default function Loading() {\n  return (\n    <div className=\"flex h-screen items-center justify-center bg-background\">\n      <div className=\"h-16 w-16 animate-spin rounded-full border-4 border-dashed border-primary\"></div>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAI,WAAU;;;;;;;;;;;AAGrB","debugId":null}}]
-}
