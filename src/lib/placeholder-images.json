@@ -1,0 +1,226 @@
+{
+  "placeholderImages": [
+    {
+      "id": "profile-pic",
+      "description": "A professional portrait of Ahmad Sami Al-Azzawi.",
+      "imageUrl": "/personal/صورة.png",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "ai-easy-1",
+      "description": "Screenshot of AI Easy Platform homepage.",
+      "imageUrl": "/project/Ai website/1.jpg",
+      "imageHint": "website homepage"
+    },
+    {
+      "id": "ai-easy-2",
+      "description": "Screenshot of AI Easy Platform dashboard.",
+      "imageUrl": "/project/Ai website/2.jpg",
+      "imageHint": "dashboard ui"
+    },
+    {
+      "id": "ai-easy-3",
+      "description": "Screenshot of AI Easy Platform tools.",
+      "imageUrl": "/project/Ai website/3.jpg",
+      "imageHint": "ai tools"
+    },
+    {
+      "id": "ai-easy-4",
+      "description": "Screenshot of AI Easy Platform file conversion.",
+      "imageUrl": "/project/Ai website/4.jpg",
+      "imageHint": "file conversion"
+    },
+    {
+      "id": "jf-card-1",
+      "description": "Screenshot of JF Org vcard page 1.",
+      "imageUrl": "/project/jf-card/jf1.jpg",
+      "imageHint": "vcard website"
+    },
+    {
+      "id": "jf-card-2",
+      "description": "Screenshot of JF Org vcard page 2.",
+      "imageUrl": "/project/jf-card/jf2.jpg",
+      "imageHint": "organization profile"
+    },
+    {
+      "id": "jf-card-3",
+      "description": "Screenshot of JF Org vcard page 3.",
+      "imageUrl": "/project/jf-card/jf3.jpg",
+      "imageHint": "contact page"
+    },
+    {
+      "id": "vba-hr-1",
+      "description": "Screenshot of the VBA HR Excel system.",
+      "imageUrl": "/project/vba hr/vba hr.jpg",
+      "imageHint": "excel spreadsheet"
+    },
+    {
+      "id": "pmp-logo",
+      "description": "PMP Certification Logo",
+      "imageUrl": "https://picsum.photos/seed/pmp/200/50",
+      "imageHint": "logo certificate"
+    },
+    {
+      "id": "coursera-logo",
+      "description": "Coursera Logo",
+      "imageUrl": "https://images.unsplash.com/photo-1756027914496-21446a23baab?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxsb2dvJTIwYnJhbmR8ZW58MHx8fHwxNzU5NzgzODQ4fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "logo brand"
+    },
+    {
+      "id": "linkedin-logo",
+      "description": "LinkedIn Learning Logo",
+      "imageUrl": "https://picsum.photos/seed/linkedin/200/50",
+      "imageHint": "logo social"
+    },
+    {
+      "id": "org-vba-1",
+      "description": "Screenshot of the Reviewer Management Excel VBA system 1.",
+      "imageUrl": "/project/org vba/org1.jpg",
+      "imageHint": "excel spreadsheet"
+    },
+    {
+      "id": "org-vba-2",
+      "description": "Screenshot of the Reviewer Management Excel VBA system 2.",
+      "imageUrl": "/project/org vba/org2.jpg",
+      "imageHint": "excel spreadsheet"
+    },
+    {
+      "id": "org-vba-3",
+      "description": "Screenshot of the Reviewer Management Excel VBA system 3.",
+      "imageUrl": "/project/org vba/org3.jpg",
+      "imageHint": "excel spreadsheet"
+    },
+    {
+      "id": "org-vba-4",
+      "description": "Screenshot of the Reviewer Management Excel VBA system 4.",
+      "imageUrl": "/project/org vba/org4.jpg",
+      "imageHint": "excel spreadsheet"
+    },
+    {
+      "id": "org-vba-5",
+      "description": "Screenshot of the Reviewer Management Excel VBA system 5.",
+      "imageUrl": "/project/org vba/org5.jpg",
+      "imageHint": "excel spreadsheet"
+    },
+    {
+      "id": "BHTC-logo",
+      "description": "BHTC Logo",
+      "imageUrl": "https://picsum.photos/seed/bhtc/200/50",
+      "imageHint": "logo company"
+    },
+    {
+      "id": "google-logo",
+      "description": "Google Logo",
+      "imageUrl": "https://picsum.photos/seed/google/200/50",
+      "imageHint": "logo tech"
+    },
+    {
+      "id": "m3aarf-logo",
+      "description": "M3aarf Platform Logo",
+      "imageUrl": "https://picsum.photos/seed/m3aarf/200/50",
+      "imageHint": "logo education"
+    },
+    {
+      "id": "mindluster-logo",
+      "description": "Mindluster Logo",
+      "imageUrl": "https://picsum.photos/seed/mindluster/200/50",
+      "imageHint": "logo platform"
+    },
+    {
+      "id": "jf-website-1",
+      "description": "Screenshot of Jannat Al-Firdaws Foundation website 1.",
+      "imageUrl": "/project/website/aa1.jpg",
+      "imageHint": "website screenshot"
+    },
+    {
+      "id": "jf-website-2",
+      "description": "Screenshot of Jannat Al-Firdaws Foundation website 2.",
+      "imageUrl": "/project/website/aa2.jpg",
+      "imageHint": "website screenshot"
+    },
+    {
+      "id": "jf-website-3",
+      "description": "Screenshot of Jannat Al-Firdaws Foundation website 3.",
+      "imageUrl": "/project/website/aa3.jpg",
+      "imageHint": "website screenshot"
+    },
+    {
+      "id": "sales-1",
+      "description": "Screenshot of the Mini Sales Program 1.",
+      "imageUrl": "/project/sales/1.jpg",
+      "imageHint": "excel interface"
+    },
+    {
+      "id": "sales-2",
+      "description": "Screenshot of the Mini Sales Program 2.",
+      "imageUrl": "/project/sales/2.jpg",
+      "imageHint": "excel interface"
+    },
+    {
+      "id": "sales-3",
+      "description": "Screenshot of the Mini Sales Program 3.",
+      "imageUrl": "/project/sales/3.jpg",
+      "imageHint": "excel interface"
+    },
+    {
+      "id": "sales-4",
+      "description": "Screenshot of the Mini Sales Program 4.",
+      "imageUrl": "/project/sales/4.jpg",
+      "imageHint": "excel interface"
+    },
+    {
+      "id": "sales-5",
+      "description": "Screenshot of the Mini Sales Program 5.",
+      "imageUrl": "/project/sales/5.jpg",
+      "imageHint": "excel interface"
+    },
+    {
+      "id": "sales-6",
+      "description": "Screenshot of the Mini Sales Program 6.",
+      "imageUrl": "/project/sales/6.jpg",
+      "imageHint": "excel interface"
+    },
+    {
+      "id": "sales-7",
+      "description": "Screenshot of the Mini Sales Program 7.",
+      "imageUrl": "/project/sales/7.jpg",
+      "imageHint": "excel interface"
+    },
+    {
+      "id": "account-1",
+      "description": "Screenshot of the Income and Expense Accounts System 1.",
+      "imageUrl": "/project/account/a.jpg",
+      "imageHint": "excel spreadsheet"
+    },
+    {
+      "id": "account-2",
+      "description": "Screenshot of the Income and Expense Accounts System 2.",
+      "imageUrl": "/project/account/b.jpg",
+      "imageHint": "excel spreadsheet"
+    },
+    {
+      "id": "account-3",
+      "description": "Screenshot of the Income and Expense Accounts System 3.",
+      "imageUrl": "/project/account/c.jpg",
+      "imageHint": "excel spreadsheet"
+    },
+    {
+      "id": "account-4",
+      "description": "Screenshot of the Income and Expense Accounts System 4.",
+      "imageUrl": "/project/account/d.jpg",
+      "imageHint": "excel spreadsheet"
+    },
+    {
+      "id": "account-5",
+      "description": "Screenshot of the Income and Expense Accounts System 5.",
+      "imageUrl": "/project/account/e.jpg",
+      "imageHint": "excel spreadsheet"
+    },
+    {
+      "id": "asb-logo",
+      "description": "Arbiter Samariter Bund (ASB) Logo",
+      "imageUrl": "/working/Asb.jpg",
+      "imageHint": "organization logo"
+    }
+  ]
+}
