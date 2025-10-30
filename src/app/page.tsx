@@ -16,7 +16,12 @@ export default function Home() {
       <Experience data={{ public: profileData.experience_public, private: profileData.experience_private }} />
       <Skills data={profileData.skills} />
       <Projects data={profileData.projects} />
-      <EducationAndCourses education={profileData.education} courses={profileData.courses} languages={profileData.languages} />
+      <EducationAndCourses 
+        education={profileData.education} 
+        courses={profileData.courses} 
+        languages={profileData.languages} 
+        additionalInfo={profileData.additionalInfo} 
+      />
       <Contact data={profileData.contactInfo} />
       <Faq data={profileData.faq} />
     </div>

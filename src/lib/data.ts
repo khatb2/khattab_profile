@@ -6,6 +6,8 @@ export const profileData: ProfileData = {
     name_ar: "خطاب علي حسن",
     title_en: "Pro admin-technlogy-accountant",
     title_ar: "محترف تقني اداري محاسبي",
+    remoteOpportunities_en: "Open to remote, hybrid, and relocation opportunities",
+    remoteOpportunities_ar: "مفتوح للفرص عن بُعد والهجينة وإعادة التوطين",
     gender_en: "Male",
     gender_ar: "ذكر",
     birthDate: "1996-05-04",
@@ -13,8 +15,8 @@ export const profileData: ProfileData = {
     maritalStatus_ar: "اعزب",
     nationality_en: "Iraqi",
     nationality_ar: "عراقي",
-    residence_en: "Iraq",
-    residence_ar: "العراق",
+    residence_en: "",
+    residence_ar: "",
     passport_en: "Iraqi",
     passport_ar: "عراقي",
     summary_en: "A professional with comprehensive experience combining financial and accounting management with the development of technical systems and artificial intelligence. Specialized in designing and implementing digital transformation solutions that enhance operational efficiency and link administrative processes with modern technologies. Possess strong experience in project management, data analysis, and financial auditing, with an ability to align organizational goals with innovation.",
@@ -204,6 +206,24 @@ export const profileData: ProfileData = {
       name_ar: "الإنجليزية",
       level_en: "Fluent in Reading & Writing, Good in Speaking",
       level_ar: "قراءة وكتابة بطلاقة، تحدث جيد"
+    }
+  ],
+  additionalInfo: [
+    {
+      info_en: "Holder of a valid Iraqi passport.",
+      info_ar: "حاملاً لجواز سفر عراقي ساري المفعول."
+    },
+    {
+      info_en: "Available for online interviews.",
+      info_ar: "متاح للمقابلات عبر الإنترنت."
+    },
+    {
+      info_en: "Ready to relocate internationally upon receiving a valid job offer and visa.",
+      info_ar: "جاهز لإعادة التوطين دولياً عند استلام عرض عمل وتأشيرة سارية."
+    },
+    {
+      info_en: "Can start immediately.",
+      info_ar: "يمكن البدء فوراً."
     }
   ],
   education: [

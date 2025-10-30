@@ -3,6 +3,8 @@ export interface PersonalInfo {
   name_ar: string;
   title_en: string;
   title_ar: string;
+  remoteOpportunities_en?: string;
+  remoteOpportunities_ar?: string;
   gender_en: string;
   gender_ar: string;
   birthDate: string;
@@ -67,6 +69,11 @@ export interface Language {
   level_ar: string;
 }
 
+export interface AdditionalInfo {
+  info_en: string;
+  info_ar: string;
+}
+
 export interface EducationItem {
   degree_en: string;
   degree_ar: string;
@@ -109,6 +116,7 @@ export interface ProfileData {
   experience_private: ExperienceItem[];
   skills: Skills;
   languages: Language[];
+  additionalInfo: AdditionalInfo[];
   education: EducationItem[];
   courses: CourseItem[];
   projects: ProjectItem[];

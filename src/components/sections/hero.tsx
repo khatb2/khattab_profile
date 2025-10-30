@@ -15,7 +15,6 @@ const Hero = ({ data }: { data: PersonalInfo }) => {
   const profileImage = PlaceHolderImages.find(img => img.id === data.photoUrl);
 
   const details = [
-    { icon: MapPin, label_en: 'Residence', label_ar: 'مكان السكن', value_en: data.residence_en, value_ar: data.residence_ar },
     { icon: Globe, label_en: 'Nationality', label_ar: 'الجنسية', value_en: data.nationality_en, value_ar: data.nationality_ar },
     { icon: BadgeInfo, label_en: 'Passport', label_ar: 'الجواز', value_en: data.passport_en, value_ar: data.passport_ar },
     { icon: Calendar, label_en: 'Date of Birth', label_ar: 'تاريخ الميلاد', value_en: format(new Date(data.birthDate), 'MMMM d, yyyy'), value_ar: format(new Date(data.birthDate), 'd MMMM yyyy') },
@@ -51,6 +50,11 @@ const Hero = ({ data }: { data: PersonalInfo }) => {
               <h2 className="font-body text-xl md:text-2xl text-accent font-semibold mt-1">
                 {language === 'en' ? data.title_en : data.title_ar}
               </h2>
+              {data.remoteOpportunities_en && data.remoteOpportunities_ar && (
+                <p className="mt-2 text-muted-foreground text-base font-medium">
+                  {language === 'en' ? data.remoteOpportunities_en : data.remoteOpportunities_ar}
+                </p>
+              )}
             </div>
 
             <p className="mt-2 text-muted-foreground text-base leading-relaxed max-w-2xl">

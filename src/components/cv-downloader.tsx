@@ -7,9 +7,7 @@ import { Download } from 'lucide-react';
 const CVDownloader = () => {
   const { language } = useLanguage();
 
-  const cvPath = language === 'en' 
-    ? '/cv/CV-Khattab_Ali_Hassan-EN.pdf' 
-    : '/cv/CV-Khattab_Ali_Hassan-AR.pdf';
+  const cvPath = '/cv/CV_Khattab_2025.pdf';
   
   const buttonText = language === 'en' ? 'Download CV' : 'تحميل السيرة الذاتية';
 

@@ -2,20 +2,21 @@
 
 import Image from 'next/image';
 import { useLanguage } from '@/context/language-context';
-import type { EducationItem, CourseItem, Language } from '@/types';
+import type { EducationItem, CourseItem, Language, AdditionalInfo } from '@/types';
 import SectionWrapper from '@/components/section-wrapper';
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from '@/components/ui/button';
-import { GraduationCap, BookOpen, MessageSquare, CheckCircle, Eye } from 'lucide-react';
+import { GraduationCap, BookOpen, MessageSquare, CheckCircle, Eye, Info } from 'lucide-react';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 
 interface Props {
   education: EducationItem[];
   courses: CourseItem[];
   languages: Language[];
+  additionalInfo: AdditionalInfo[];
 }
 
-const EducationAndCourses = ({ education, courses, languages }: Props) => {
+const EducationAndCourses = ({ education, courses, languages, additionalInfo }: Props) => {
   const { language } = useLanguage();
 
   return (
@@ -132,6 +133,28 @@ const EducationAndCourses = ({ education, courses, languages }: Props) => {
                         <p className="font-bold text-md">{language === 'en' ? lang.name_en : lang.name_ar}</p>
                         <p className="text-sm text-muted-foreground">{language === 'en' ? lang.level_en : lang.level_ar}</p>
                         </div>
+                    </li>
+                    ))}
+                </ul>
+            </CardContent>
+        </Card>
+
+        {/* Additional Information */}
+        <Card className="shadow-lg hover:shadow-xl transition-shadow duration-300">
+            <CardHeader>
+                <div className="flex items-center gap-4">
+                    <Info className="h-8 w-8 text-primary" />
+                    <CardTitle className="font-headline text-3xl font-bold">
+                    {language === 'en' ? 'Additional Information' : 'معلومات إضافية'}
+                    </CardTitle>
+                </div>
+            </CardHeader>
+            <CardContent>
+                <ul className="space-y-3">
+                    {additionalInfo.map((info, index) => (
+                    <li key={index} className="flex items-start gap-3">
+                        <CheckCircle className="h-5 w-5 text-accent mt-0.5 flex-shrink-0" />
+                        <p className="text-sm text-muted-foreground">{language === 'en' ? info.info_en : info.info_ar}</p>
                     </li>
                     ))}
                 </ul>
