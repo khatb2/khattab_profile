@@ -43,9 +43,9 @@ temp/
 *.min.js
 *.min.css
 
-# Public images (we'll handle these separately)
-public/courses/
-public/personal/
-public/project/
-public/working/
-public/cv/
+# Commented out to allow public assets to be committed
+# public/courses/
+# public/personal/
+# public/project/
+# public/working/
+# public/cv/
