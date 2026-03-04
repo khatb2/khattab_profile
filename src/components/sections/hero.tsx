@@ -8,6 +8,8 @@ import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { MapPin, Briefcase, User, Calendar, Users, Globe, BadgeInfo, Quote, Download } from 'lucide-react';
 import { format } from 'date-fns';
+import { Button } from '@/components/ui/button';
+import Link from 'next/link';
 import CVDownloader from '@/components/cv-downloader';
 
 const Hero = ({ data }: { data: PersonalInfo }) => {
@@ -16,9 +18,8 @@ const Hero = ({ data }: { data: PersonalInfo }) => {
 
   const details = [
     { icon: Globe, label_en: 'Nationality', label_ar: 'الجنسية', value_en: data.nationality_en, value_ar: data.nationality_ar },
-    { icon: BadgeInfo, label_en: 'Passport', label_ar: 'الجواز', value_en: data.passport_en, value_ar: data.passport_ar },
-    { icon: Calendar, label_en: 'Date of Birth', label_ar: 'تاريخ الميلاد', value_en: format(new Date(data.birthDate), 'MMMM d, yyyy'), value_ar: format(new Date(data.birthDate), 'd MMMM yyyy') },
-    { icon: Users, label_en: 'Marital Status', label_ar: 'الحالة الاجتماعية', value_en: data.maritalStatus_en, value_ar: data.maritalStatus_ar },
+    { icon: Briefcase, label_en: 'Experience', label_ar: 'الخبرة', value_en: '6 Years in Private, Public & Humanitarian Sectors', value_ar: '6 سنوات في القطاعات الخاصة والحكومية والإنسانية' },
+    { icon: User, label_en: 'Role', label_ar: 'الوظيفة', value_en: data.title_en, value_ar: data.title_ar },
   ];
 
   return (
@@ -26,7 +27,7 @@ const Hero = ({ data }: { data: PersonalInfo }) => {
       <div className="flex flex-col gap-8">
         <Card className="overflow-hidden shadow-lg border-slate-700">
           <CardContent className="p-6 lg:p-8 flex flex-col items-center gap-6 text-center">
-            
+
             <div className="relative">
               {profileImage && (
                 <div className="relative group p-1.5 rounded-full bg-gradient-to-br from-blue-300 to-blue-500">
@@ -60,7 +61,7 @@ const Hero = ({ data }: { data: PersonalInfo }) => {
             <p className="mt-2 text-muted-foreground text-base leading-relaxed max-w-2xl">
               {language === 'en' ? data.summary_en : data.summary_ar}
             </p>
-            
+
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm text-left w-full max-w-3xl">
               {details.map(detail => (
                 <div key={detail.label_en} className="flex items-center gap-3">
@@ -76,18 +77,17 @@ const Hero = ({ data }: { data: PersonalInfo }) => {
           </CardContent>
         </Card>
 
-        <Card className="shadow-lg bg-secondary/50">
-          <CardContent className="p-6 flex items-center gap-4">
-            <Quote className="h-8 w-8 text-primary flex-shrink-0" />
-            <blockquote className="italic text-muted-foreground">
-              <p>{language === 'en' ? data.about_me_en : data.about_me_ar}</p>
-            </blockquote>
-          </CardContent>
-        </Card>
 
-        <CVDownloader />
 
+        <div className="flex justify-center mt-4">
+          <Button asChild variant="outline" size="lg" className="rounded-full px-8 border-primary text-primary hover:bg-primary/10">
+            <Link href="/about">
+              {language === 'en' ? 'Learn More About Me' : 'تعرف علي أكثر'}
+            </Link>
+          </Button>
+        </div>
       </div>
+
     </SectionWrapper>
   );
 };

@@ -21,6 +21,7 @@ export interface PersonalInfo {
   about_me_en: string;
   about_me_ar: string;
   photoUrl: string;
+  cvUrl?: string;
 }
 
 export interface VisionAndMission {
@@ -108,10 +109,64 @@ export interface FaqItem {
   answer_ar: string;
 }
 
+export interface SuccessStory {
+  title_en: string;
+  title_ar: string;
+  problem_en: string;
+  problem_ar: string;
+  implementation_en: string;
+  implementation_ar: string;
+  result_en: string;
+  result_ar: string;
+}
+
+
+export interface SolutionItem {
+  id: string;
+  title_en: string;
+  title_ar: string;
+  problem_en: string;
+  problem_ar: string;
+  context_en: string;
+  context_ar: string;
+  points_en: string[];
+  points_ar: string[];
+  outcome_en: string;
+  outcome_ar: string;
+  icon?: string;
+}
+
+export interface HowItWorksItem {
+  title_en: string;
+  title_ar: string;
+  description_en: string;
+  description_ar: string;
+}
+
+export interface HowItWorksData {
+  title_en: string;
+  title_ar: string;
+  steps: HowItWorksItem[];
+}
+
+export interface SolutionsData {
+  title_en: string;
+  title_ar: string;
+  subtitle_en: string;
+  subtitle_ar: string;
+  intro_en: string;
+  intro_ar: string;
+  items: SolutionItem[];
+  outro_en: string;
+  outro_ar: string;
+}
+
 export interface ProfileData {
   personalInfo: PersonalInfo;
   visionAndMission: VisionAndMission;
   contactInfo: ContactInfo;
+  solutions: SolutionsData;
+  successStories: SuccessStory[];
   experience_public: ExperienceItem[];
   experience_private: ExperienceItem[];
   skills: Skills;
@@ -121,4 +176,5 @@ export interface ProfileData {
   courses: CourseItem[];
   projects: ProjectItem[];
   faq: FaqItem[];
+  howItWorks: HowItWorksData;
 }

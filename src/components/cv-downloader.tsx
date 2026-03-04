@@ -4,11 +4,13 @@ import { useLanguage } from '@/context/language-context';
 import { Button } from '@/components/ui/button';
 import { Download } from 'lucide-react';
 
+import { profileData } from '@/lib/data';
+
 const CVDownloader = () => {
   const { language } = useLanguage();
 
-  const cvPath = '/cv/CV_Khattab_2025.pdf';
-  
+  const cvPath = profileData.personalInfo.cvUrl || '/cv/CV_Khattab_2025.pdf';
+
   const buttonText = language === 'en' ? 'Download CV' : 'تحميل السيرة الذاتية';
 
   return (

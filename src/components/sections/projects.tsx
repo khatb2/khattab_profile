@@ -32,7 +32,18 @@ const Projects = ({ data }: { data: ProjectItem[] }) => {
 
       <div className="mt-12 grid grid-cols-1 gap-8">
         {visibleProjects.map((project, index) => {
-          const projectImages = project.imageIds.map(id => PlaceHolderImages.find(img => img.id === id)).filter(Boolean);
+          const projectImages = project.imageIds.map(id => {
+            // Check if ID is likely a path
+            if (id.startsWith('/') || id.startsWith('http')) {
+              return {
+                id,
+                imageUrl: id,
+                description: project.name_en,
+                imageHint: project.name_en
+              };
+            }
+            return PlaceHolderImages.find(img => img.id === id);
+          }).filter(Boolean);
 
           return (
             <Card key={index} className="overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -50,12 +61,12 @@ const Projects = ({ data }: { data: ProjectItem[] }) => {
                   </CardContent>
                   <CardFooter className="p-0 mt-4">
                     {project.link && project.link !== "#" && (
-                        <Button asChild>
+                      <Button asChild>
                         <a href={project.link} target="_blank" rel="noopener noreferrer">
-                            {language === 'en' ? 'Visit Project' : 'زيارة المشروع'}
-                            <ArrowUpRight className="h-4 w-4 ltr:ml-2 rtl:mr-2" />
+                          {language === 'en' ? 'Visit Project' : 'زيارة المشروع'}
+                          <ArrowUpRight className="h-4 w-4 ltr:ml-2 rtl:mr-2" />
                         </a>
-                        </Button>
+                      </Button>
                     )}
                   </CardFooter>
                 </div>
@@ -77,8 +88,8 @@ const Projects = ({ data }: { data: ProjectItem[] }) => {
                                     data-ai-hint={image.imageHint}
                                   />
                                   <div className="absolute inset-0 flex flex-col items-center justify-center bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                      <Eye className="h-10 w-10 text-white" />
-                                      <span className="mt-2 text-sm font-semibold text-white">{language === 'en' ? 'View Image' : 'عرض الصورة'}</span>
+                                    <Eye className="h-10 w-10 text-white" />
+                                    <span className="mt-2 text-sm font-semibold text-white">{language === 'en' ? 'View Image' : 'عرض الصورة'}</span>
                                   </div>
                                 </CardContent>
                               </a>
@@ -96,22 +107,22 @@ const Projects = ({ data }: { data: ProjectItem[] }) => {
           );
         })}
       </div>
-      
+
       {data.length > 2 && (
         <div className="mt-8 flex justify-center">
-            <Button variant="outline" onClick={toggleShowAll}>
-              {showAll ? (
-                <>
-                  <Minus className="h-4 w-4 ltr:mr-2 rtl:ml-2" />
-                  {language === 'en' ? 'Show Less' : 'عرض أقل'}
-                </>
-              ) : (
-                <>
-                  <Plus className="h-4 w-4 ltr:mr-2 rtl:ml-2" />
-                  {language === 'en' ? 'Show All' : 'عرض الكل'}
-                </>
-              )}
-            </Button>
+          <Button variant="outline" onClick={toggleShowAll}>
+            {showAll ? (
+              <>
+                <Minus className="h-4 w-4 ltr:mr-2 rtl:ml-2" />
+                {language === 'en' ? 'Show Less' : 'عرض أقل'}
+              </>
+            ) : (
+              <>
+                <Plus className="h-4 w-4 ltr:mr-2 rtl:ml-2" />
+                {language === 'en' ? 'Show All' : 'عرض الكل'}
+              </>
+            )}
+          </Button>
         </div>
       )}
 
