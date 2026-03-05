@@ -2,7 +2,7 @@
 
 import { useState, useEffect, RefObject } from 'react';
 
-export function useOnScreen(ref: RefObject<HTMLElement>, rootMargin = "0px"): boolean {
+export function useOnScreen(ref: RefObject<HTMLElement | null>, rootMargin = "0px"): boolean {
   const [isIntersecting, setIntersecting] = useState(false);
 
   useEffect(() => {

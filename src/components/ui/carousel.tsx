@@ -29,6 +29,7 @@ type CarouselContextProps = {
   scrollNext: () => void
   canScrollPrev: boolean
   canScrollNext: boolean
+  dir?: "ltr" | "rtl"
 } & CarouselProps
 
 const CarouselContext = React.createContext<CarouselContextProps | null>(null)
@@ -135,6 +136,7 @@ const Carousel = React.forwardRef<
           scrollNext,
           canScrollPrev,
           canScrollNext,
+          dir,
         }}
       >
         <div
@@ -202,7 +204,7 @@ const CarouselPrevious = React.forwardRef<
   React.ComponentProps<typeof Button>
 >(({ className, variant = "outline", size = "icon", ...props }, ref) => {
   const { orientation, scrollPrev, canScrollPrev, dir } = useCarousel()
-  
+
   const Arrow = dir === 'rtl' ? ArrowRight : ArrowLeft;
 
   return (

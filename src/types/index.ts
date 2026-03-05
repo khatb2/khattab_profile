@@ -161,6 +161,12 @@ export interface SolutionsData {
   outro_ar: string;
 }
 
+export interface HorizontalResult {
+  icon: string;
+  label_en: string;
+  label_ar: string;
+}
+
 export interface ProfileData {
   personalInfo: PersonalInfo;
   visionAndMission: VisionAndMission;
@@ -177,4 +183,5 @@ export interface ProfileData {
   projects: ProjectItem[];
   faq: FaqItem[];
   howItWorks: HowItWorksData;
+  horizontalResults: HorizontalResult[];
 }

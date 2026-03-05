@@ -574,7 +574,13 @@ export const profileData: ProfileData = {
         description_ar: ""
       }
     ]
-  }
+  },
+  horizontalResults: [
+    { icon: "⚡", label_en: "Efficiency", label_ar: "الكفاءة" },
+    { icon: "🛡️", label_en: "Control", label_ar: "السيطرة" },
+    { icon: "📈", label_en: "Growth", label_ar: "النمو" },
+    { icon: "🤖", label_en: "Automation", label_ar: "الأتمتة" }
+  ]
 };
 
 
