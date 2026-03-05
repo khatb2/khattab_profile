@@ -3,14 +3,15 @@
 Welcome to my professional portfolio website! This is a modern, responsive portfolio built with Next.js showcasing my skills, experience, and projects.
 
 ## 🌐 Live Demo
-[https://khatb2.github.io/khattab_profile](https://khatb2.github.io/khattab_profile)
+- **Vercel**: [https://khattab-profile.vercel.app](https://khattab-profile.vercel.app) (Production)
+- **GitHub Pages**: [https://khatb2.github.io/khattab_profile](https://khatb2.github.io/khattab_profile)
 
 ## 🛠️ Technologies Used
 - **Next.js 15** - React framework for production
 - **TypeScript** - Typed superset of JavaScript
 - **Tailwind CSS** - Utility-first CSS framework
 - **Lucide React** - Beautiful SVG icons
-- **Vercel** - Deployment platform (or GitHub Pages)
+- **Vercel** - Deployment platform
 
 ## 📁 Project Structure
 ```
@@ -58,6 +59,37 @@ npm run build
 npm start
 ```
 
+## 📦 Deployment
+
+### Deploy to Vercel (Recommended)
+Vercel is the easiest way to deploy your Next.js application.
+
+1. **Install Vercel CLI** (optional):
+   ```bash
+   npm install -g vercel
+   ```
+
+2. **Deploy with one command**:
+   ```bash
+   vercel
+   ```
+   
+   Or simply push to GitHub and connect your repository on [Vercel](https://vercel.com).
+
+3. **Automatic deployments**:
+   - Every push to `main` branch triggers automatic deployment
+   - Pull requests get preview deployments
+   - Production deployment from main branch
+
+**Vercel Configuration**: The project includes `vercel.json` for optimal deployment settings.
+
+### Deploy to Other Platforms
+The project can be deployed on any platform that supports Next.js:
+- Netlify
+- Railway
+- Render
+- AWS Amplify
+
 ## 📱 Features
 - Responsive design for all devices
 - Dark/light theme toggle
@@ -66,14 +98,6 @@ npm start
 - Skills visualization
 - Contact information
 - SEO optimized
-
-## 📦 Dependencies
-- next: 15.3.3
-- react: 18.3.1
-- react-dom: 18.3.1
-- tailwindcss: 3.4.1
-- lucide-react: 0.475.0
-- typescript: 5.x
 
 ## 📄 License
 This project is open source and available under the [MIT License](LICENSE).
