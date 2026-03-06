@@ -24,7 +24,7 @@ export const profileData: ProfileData = {
     about_me_en: "I believe that true growth isn't about effort alone, but about the synergy between strategy and technical intelligence. As your partner, my focus is on engineering an environment where data drives decisions and technology serves the core mission.",
     about_me_ar: "أحوّل الاحتكاك التشغيلي إلى نتائج مالية واضحة عبر تنفيذ حلول رقمية عملية تُنهي الاختناقات وتعيد ضبط مسار العمل.\n\nأبدأ من فهم الواقع الميداني، ثم أبني نظاماً مترابطاً بمؤشرات أداء دقيقة تضع كل قرار في سياقه الصحيح.\n\nهدفي تقليل الهدر، تسريع القرار، وتحويل المخاطر إلى قيمة مستدامة يمكن قياس أثرها بثقة.",
     photoUrl: "profile-pic",
-    cvUrl: "/cv/khattab ali- cv.pdf"
+    cvUrl: "/cv/cv.pdf"
   },
   visionAndMission: {
     vision_en: "To lead the transformation of traditional business operations into lean, data-driven engines of growth and stability.",
@@ -212,8 +212,8 @@ export const profileData: ProfileData = {
       company_ar: "مؤسسة جنات الفردوس (شريك UNDP)",
       title_en: "Data Entry & info Assistant",
       title_ar: "مساعد إدخال بيانات ومعلومات",
-      period_en: "2024/July - 2024/Sep",
-      period_ar: "2024/تموز - 2024/أيلول",
+      period_en: "2022/July - 2022/Sep",
+      period_ar: "2022/تموز - 2022/أيلول",
       description_en: "",
       description_ar: "",
       details_en: [
